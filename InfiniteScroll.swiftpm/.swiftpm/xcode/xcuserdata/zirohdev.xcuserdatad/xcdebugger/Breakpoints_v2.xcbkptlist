@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F39D5BAB-6108-4A54-A26D-34A4AF405AFE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "168A1D43-3070-4A0B-9291-F8AD0708F8EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InfiniteScrollNewsApp/API/Api.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "GetEverything(_:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "168A1D43-3070-4A0B-9291-F8AD0708F8EE - 229856f0906b38a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for InfiniteScroll.GetEverything(InfiniteScroll.EverythingRequest) async -&gt; Swift.Optional&lt;Swift.Array&lt;InfiniteScroll.Article&gt;&gt;"
+                  moduleName = "InfiniteScroll.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zirohdev/Projects/Playgrounds/InfiniteScroll.swiftpm/InfiniteScrollNewsApp/API/Api.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25">
+               </Location>
+               <Location
+                  uuid = "168A1D43-3070-4A0B-9291-F8AD0708F8EE - 8673342319bd4223"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for InfiniteScroll.GetEverything(InfiniteScroll.EverythingRequest) async -&gt; Swift.Optional&lt;Swift.Array&lt;InfiniteScroll.Article&gt;&gt;"
+                  moduleName = "InfiniteScroll.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zirohdev/Projects/Playgrounds/InfiniteScroll.swiftpm/InfiniteScrollNewsApp/API/Api.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25">
+               </Location>
+               <Location
+                  uuid = "168A1D43-3070-4A0B-9291-F8AD0708F8EE - b508b5b6e7879c90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for InfiniteScroll.GetEverything(InfiniteScroll.EverythingRequest) async -&gt; Swift.Optional&lt;Swift.Array&lt;InfiniteScroll.Article&gt;&gt;"
+                  moduleName = "InfiniteScroll.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zirohdev/Projects/Playgrounds/InfiniteScroll.swiftpm/InfiniteScrollNewsApp/API/Api.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25">
+               </Location>
+               <Location
+                  uuid = "168A1D43-3070-4A0B-9291-F8AD0708F8EE - 2c12ad5d1564e9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for InfiniteScroll.GetEverything(InfiniteScroll.EverythingRequest) async -&gt; Swift.Optional&lt;Swift.Array&lt;InfiniteScroll.Article&gt;&gt;"
+                  moduleName = "InfiniteScroll.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zirohdev/Projects/Playgrounds/InfiniteScroll.swiftpm/InfiniteScrollNewsApp/API/Api.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
