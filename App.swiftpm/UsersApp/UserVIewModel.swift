@@ -15,8 +15,14 @@ class USerViewModel: ObservableObject {
     @Published var users: [User] = []
     
     func fetchUsers() async {
-        let userList  = await networkService.fetchData()
-        users += userList
+        do {
+            
+            let userList  = try await networkService.fetchData()
+            users += userList
+        }
+        catch{
+            
+        }
     }
     
     func addFav(_ user: User) -> Void {

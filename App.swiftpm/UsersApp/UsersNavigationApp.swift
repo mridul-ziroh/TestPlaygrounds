@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UsersNavigationApp: View {
     @StateObject private var viewModel = USerViewModel()
-    
+    @State var retry = false
     var body: some View {
         VStack{
             NavigationStack{
@@ -45,15 +45,35 @@ struct UsersNavigationApp: View {
     }
     
     func image(_ url: String) -> some View {
-        AsyncImage(url: URL(string: url)!){ image in
-            image
-                .resizable()
-                .frame(width:40, height: 40)
-                .clipShape(Circle())
-        } placeholder: {
-            ProgressView()
-                .progressViewStyle(.circular)
-        }
+        AsyncImage(url: URL(string: url)) { phase in
+            switch phase {
+            case .empty:
+                ProgressView()
+                    .progressViewStyle(.circular)
+                
+            case .success(let image):
+                image
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                
+            case .failure:
+                VStack {
+                    Image(systemName: "exclamationmark.triangle")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(.red)
+                    Button("Retry") {
+                        // Toggle to force AsyncImage to reload
+                        retry.toggle()
+                    }
+                    .font(.caption)
+                }
+                
+            @unknown default:
+                EmptyView()
+            }
+        }.id(retry)
     }
 }
 

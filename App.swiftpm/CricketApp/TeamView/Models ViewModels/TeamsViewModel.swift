@@ -18,7 +18,7 @@ import Foundation
 
 
 class TeamsViewModel: ObservableObject {
-    nonisolated(unsafe) private let networkService: NetworkService
+    private let networkService: NetworkService
     @Published var teams: [Team] = []
     @Published var selectedTeams: [Team] = []
     

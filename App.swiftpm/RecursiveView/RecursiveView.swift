@@ -21,7 +21,8 @@ struct RecursiveView: View {
           if n == 1 {
               return AnyView(view)
           } else {
-              return AnyView(CheckerView(content: recursiveView(n - 1)))
+              let col = Color.random
+              return AnyView(CheckerView(content: recursiveView(n - 1), col: col))
           }
       }
     
@@ -45,14 +46,15 @@ struct RecursiveView: View {
 
 struct CheckerView<Content: View>: View{
     var content: Content
+    var col : Color
     var body: some View {
         buildView()
             .ignoresSafeArea()
     }
+    
     @ViewBuilder
     func buildView() -> some View {
         VStack{
-            let col = Color.random
             HStack{
                 content
                 col

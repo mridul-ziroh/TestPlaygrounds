@@ -25,7 +25,7 @@ struct User: Codable, Identifiable {
 class UsersNetworkApi {
     static let shared :UsersNetworkApi = UsersNetworkApi()
     
-    func fetchData() async -> [User] {
+    func fetchData() async throws -> [User] {
         guard let url = URL(string: "https://my-json-server.typicode.com/ashutoshbilla/demo/users") else {
             return []
         }

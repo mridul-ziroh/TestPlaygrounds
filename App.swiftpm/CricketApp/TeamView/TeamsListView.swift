@@ -1,5 +1,13 @@
 //
 //  TeamsListView.swift
+//  App
+//
+//  Created by mridul-ziroh on 06/04/25.
+//
+
+
+//
+//  TeamsListView.swift
 //  ICC Cricket World Cup 2019
 //
 //  Created by mridul-ziroh on 06/04/25.
@@ -59,7 +67,7 @@ struct TeamsListView: View {
         .onAppear() {
             let vm = viewModel
             Task{
-                await vm.loadTeams()
+                await viewModel.loadTeams()
             }
             
         }
